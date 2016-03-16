@@ -2,49 +2,58 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Je n'ai jamais été - NATYOTCASSAN C</title>
-  <link href="css/main.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Je n'ai jamais été - NATYOTCASSAN C</title>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-  <div id="title">
-    <h1>Je n'ai jamais été</h1>
-    <h2>NATYOT CASSAN</h2>
-    <h1 id="word"></h1>
-    <a onclick="popcorn.play()" href="#">Jouer la musique</a>
-  </div>
-  <div id="container"></div>
-  <div id='attention'>les tweets affichés sont récupérés automatiquement
-    <br/>toutes les 15 minutes et <b>n'engagent que leurs auteurs</b></div>
-  <audio id="myAudio">
-    <source src="data/song.mp3" type="audio/mpeg">
-  </audio>
-  <h1 id="text"></h1>
-  <script src="bower_components/jquery/dist/jquery.min.js">
-  </script>
-  <script src="bower_components/popcorn-js/popcorn.js">
-  </script>
-  <script>
-  window.twttr = (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0],
-      t = window.twttr || {};
-    if (d.getElementById(id)) return t;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "https://platform.twitter.com/widgets.js";
-    fjs.parentNode.insertBefore(js, fjs);
+    <div id="container">
+        <div id="title">
+        <img src="img/natyotcassan.jpg"</div>
+            <h1>Je n'ai jamais été...</h1>
+            
+            <h1 id="word"></h1>
+        </div>
+        <div id="caution">
+             <div id='attention'>les tweets affichés sont récupérés automatiquement
+        <br/>toutes les 15 minutes et <b>n'engagent que leurs auteurs</b></div>
+            <h1><a onclick="popcorn.play()" href="#"><img width="64px" src="img/play.png"/></h1>
+                <br/>
+               
+                <p>dev : <a target="_blank" href="http://david-o.net">davidonet</a>
+                    <br/>
+        </div>
+    </div>
+   
+    <audio id="myAudio">
+        <source src="data/song.mp3" type="audio/mpeg">
+    </audio>
+    <h1 id="text"></h1>
+    <script src="bower_components/jquery/dist/jquery.min.js">
+    </script>
+    <script src="bower_components/popcorn-js/popcorn.js">
+    </script>
+    <script>
+    window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
 
-    t._e = [];
-    t.ready = function(f) {
-      t._e.push(f);
-    };
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
 
-    return t;
-  }(document, "script", "twitter-wjs"));
-  </script>
-  <script src="js/main.js">
-  </script>
+        return t;
+    }(document, "script", "twitter-wjs"));
+    </script>
+    <script src="js/main.js">
+    </script>
 </body>
 
 </html>
