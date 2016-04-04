@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "popcorn-js": "popcornjs#~1.5.11"
+    "popcorn-js": "popcornjs#~1.5.11",
+    "bootstrap": "~3.3.6"
   }
 }
