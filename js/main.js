@@ -9,7 +9,9 @@ $(function() {
   });
 
   $.popcorn.cue(232, function() {
-    $('#credits').fadeIn();
+    $('#credits').fadeIn(1000, function() {
+      window.scrollTo(0, document.body.scrollHeight);
+    });
   });
 
   function InterVideo(id) {
