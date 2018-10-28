@@ -44,7 +44,7 @@ $(function() {
   $.popcorn.cue(230, finidetre.stop);
 
 
-  $.get('http://api.bype.org/jnaje.json', function(data) {
+  $.get('https://api.david-o.net/jnaje.json', function(data) {
     $.each(data, function(i, obj) {
       $.popcorn.cue(obj.position - .5, function() {
         $('#container').append('<div class="word">' + obj.word + '</div>');
